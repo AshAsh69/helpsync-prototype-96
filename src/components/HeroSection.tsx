@@ -33,7 +33,7 @@ export const HeroSection = () => {
         className="absolute inset-0"
       >
         <div className="absolute inset-0 hero-gradient opacity-90" />
-        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-0 bg-background/30" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-secondary/15 rounded-full blur-2xl animate-float" />
         <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
