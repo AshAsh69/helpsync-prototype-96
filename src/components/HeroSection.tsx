@@ -151,16 +151,13 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 px-4"
+              className="flex justify-center mb-12 sm:mb-16 px-4"
             >
-              <Button asChild size="lg" variant="hero" className="group w-full sm:min-w-[200px] hover:shadow-2xl hover:shadow-primary/25 transition-all duration-300">
+              <Button asChild size="lg" variant="hero" className="group min-w-[200px] hover:shadow-2xl hover:shadow-primary/25 transition-all duration-300">
                 <Link to="/login">
                   Get Started Now
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
-              </Button>
-              <Button asChild size="lg" variant="hero-outline" className="w-full sm:min-w-[200px] hover:shadow-xl transition-all duration-300">
-                <Link to="#technology">See Our Technology</Link>
               </Button>
             </motion.div>
 
