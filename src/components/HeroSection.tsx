@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Sparkles, Target, Zap } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useRef } from 'react';
 import heroBgImage from '@/assets/hero-bg-community.jpg';
@@ -110,61 +110,6 @@ export const HeroSection = () => {
               </Button>
             </motion.div>
 
-            {/* Enhanced Stats Grid */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.9 }}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto px-4"
-            >
-              <motion.div 
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="relative group cursor-pointer"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                <div className="relative bg-card/20 backdrop-blur-sm border border-primary/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:border-primary/40 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Target className="w-6 h-6 text-primary" />
-                    </div>
-                  </div>
-                  <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">98%</div>
-                  <div className="text-sm sm:text-base text-white/70">Connection Success</div>
-                </div>
-              </motion.div>
-
-              <motion.div 
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="relative group cursor-pointer"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-secondary-glow/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                <div className="relative bg-card/20 backdrop-blur-sm border border-secondary/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:border-secondary/40 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
-                      <div className="text-2xl font-bold text-secondary">12</div>
-                    </div>
-                  </div>
-                  <div className="text-base sm:text-lg text-white/90 mb-1 sm:mb-2">Implementation</div>
-                  <div className="text-sm sm:text-base text-white/70">In as little as <span className="text-secondary font-semibold">12 days</span></div>
-                </div>
-              </motion.div>
-
-              <motion.div 
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="relative group cursor-pointer"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-tertiary/20 to-tertiary/30 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                <div className="relative bg-card/20 backdrop-blur-sm border border-tertiary/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:border-tertiary/40 transition-all duration-300">
-                  <div className="flex items-center justify-center mb-4">
-                    <div className="w-12 h-12 bg-tertiary/20 rounded-full flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-tertiary" />
-                    </div>
-                  </div>
-                  <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">50K+</div>
-                  <div className="text-sm sm:text-base text-white/70">Lives Transformed</div>
-                </div>
-              </motion.div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
