@@ -72,13 +72,67 @@ export const HeroSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-4 sm:mb-6 leading-[1.1] tracking-tight"
               >
-                Our <span className="text-gradient">technology</span>
+                <motion.span
+                  className="inline-block"
+                  whileHover={{ 
+                    scale: 1.05,
+                    textShadow: "0px 0px 8px rgba(255,255,255,0.8)"
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  Our
+                </motion.span>{" "}
+                <motion.span 
+                  className="text-gradient inline-block cursor-pointer"
+                  whileHover={{ 
+                    scale: 1.1,
+                    rotate: [0, -2, 2, -1, 1, 0],
+                    textShadow: "0px 0px 20px rgba(139, 92, 246, 0.8)"
+                  }}
+                  transition={{ 
+                    duration: 0.6,
+                    rotate: { duration: 0.5 }
+                  }}
+                >
+                  technology
+                </motion.span>
                 <br />
-                was built to solve
+                <motion.span
+                  className="inline-block"
+                  whileHover={{ 
+                    y: -5,
+                    textShadow: "0px 5px 10px rgba(0,0,0,0.3)"
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  was built to solve
+                </motion.span>
                 <br />
-                <span className="text-gradient">real-world</span> challenges.
+                <motion.span 
+                  className="text-gradient inline-block cursor-pointer relative"
+                  whileHover={{ 
+                    scale: 1.08,
+                    rotateX: 10,
+                    textShadow: "0px 0px 15px rgba(59, 130, 246, 0.9)"
+                  }}
+                  transition={{ duration: 0.4 }}
+                  style={{ transformStyle: "preserve-3d" }}
+                >
+                  real-world
+                </motion.span>{" "}
+                <motion.span
+                  className="inline-block font-extrabold"
+                  whileHover={{ 
+                    scale: 1.1,
+                    color: "#ffffff",
+                    textShadow: "0px 0px 25px rgba(255,255,255,1)"
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  challenges.
+                </motion.span>
               </motion.h1>
             </motion.div>
 
