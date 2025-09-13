@@ -65,7 +65,7 @@ export const HeroSection = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
-                <span className="text-xs sm:text-sm font-medium">Connecting Communities Worldwide</span>
+                <span className="text-xs sm:text-sm font-medium">Connecting Communities</span>
               </motion.div>
               
               <motion.h1
