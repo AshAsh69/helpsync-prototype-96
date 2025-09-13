@@ -11,6 +11,7 @@ import Events from "./pages/Events";
 import Organizations from "./pages/Organizations";
 import Profile from "./pages/Profile";
 import Admin from "./pages/Admin";
+import Recommendations from "./pages/Recommendations";
 import NotFound from "./pages/NotFound";
 import { useAuthStore } from "./stores/authStore";
 
@@ -51,7 +52,11 @@ const App = () => (
               <Organizations />
             </ProtectedRoute>
           } />
-          <Route path="/recommendations" element={<ProtectedRoute><div className="p-8 text-center">Recommendations - Coming Soon</div></ProtectedRoute>} />
+          <Route path="/recommendations" element={
+            <ProtectedRoute>
+              <Recommendations />
+            </ProtectedRoute>
+          } />
           <Route path="/profile" element={
             <ProtectedRoute>
               <Profile />
